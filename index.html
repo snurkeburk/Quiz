@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
 </head>
 <body>
@@ -12,10 +14,40 @@
         <h2>Ett snabbt quiz om ditt favoritämne</h2>
     </header>
     <form>
-        <input placeholder="Ben Dover" id="name">
+        <p id="mailText">Ange mail: </p>
+        <input placeholder="Ben Dover" id="mail" required>
+        <p id="klassFörsta">Jag går:</p>
+        <ul class="dropdown">
+            <li><a href="#" class="dropbtn">Teknik</a></li>
+                <li><a href="#">2018</a></li>
+                        <li><a href="#" class="bokstav">A</a></li>
+                        <li><a href="#" class="bokstav">B</a></li>
+                        <li><a href="#" class="bokstav">C</a></li>
+                        <li><a href="#" class="bokstav">D</a></li>
+                        <li><a href="#" class="bokstav">E</a></li>
+
+                <a href="#">2019</a>
+                    <div class="dropdown-content-again">
+                        <a href="#" class="bokstav">A</a>
+                        <a href="#" class="bokstav">B</a>
+                        <a href="#" class="bokstav">C</a>
+                        <a href="#" class="bokstav">D</a>
+                        <a href="#" class="bokstav">E</a>
+                    </div>
+
+                <a href="#">2020</a>
+                    <div class="dropdown-content-again">
+                        <a href="#" class="bokstav">A</a>
+                        <a href="#" class="bokstav">B</a>
+                        <a href="#" class="bokstav">C</a>
+                        <a href="#" class="bokstav">D</a>
+                        <a href="#" class="bokstav">E</a>
+                    </div>
+
+
     </form>
 
 
-    <footer></footer>
+    <footer>Isak Anderson | NTI-Quiz</footer>
 </body>
 </html>
