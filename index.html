@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="/main.js"></script>
     <title>Document</title>
 </head>
 <body>
+
     <header>
         <h1>NTI-Quiz</h1>
         <h2>Ett snabbt quiz om ditt favoritämne</h2>
@@ -16,34 +16,38 @@
     <form>        
         <p id="mailText">Ange mail: </p>
         <input placeholder="Ben Dover" id="mail" >
-        
-        <label for="riktning">Välj inriktning</label>
-        <select class="val" name="riktning">
-            <option value="teknik" id="teknik" >Teknik(spel)</option>
-            <option value="El">El</option>
-            <option value="Estet">Estet</option>
-            <option value="TeknikCivil">Teknik(civil)</option>
-        </select>
         <label for="val">Välj år</label>
         <select class="val" name="val">
             <option value="1">1:an</option>
             <option value="2">2:an</option>
             <option value="3">3:am</option>
         </select>
+        <label for="riktning">Välj inriktning</label>
     </form>
-    <!-- LINE BREAK -->
-    <div class="lineBreak"></div>
 
-    <form>
-        <p id="klassVal">Välj en eller flera favorit ämnen: </p>
-
+    <section class="inriktning"> 
+        <div class="buttonsContainer">   
+        <button class="teknikCiv">Teknik civil</button>
+        <button class="teknikSpel">Teknik spel</button>
+        <button class="Estet">Estet</button>
+        <button class="El">El</button>
+    </div>
+    
+        <!-- LINE BREAK -->
+        <div class="lineBreak"></div>
+        <form>
+        <div class="div-visible">
+            <p id="klassVal">Välj en eller flera favorit ämnen: </p>
+        </div>
     </form>
-    <button class="toggleDisplay">Hide Div</button>
-<h2>Click on the above button to hide the div below</h2>
-<div class="div-visible">
-This is a div element
-</div>
+    </section>
+
+
+
+
 
     <footer>Isak Anderson | NTI-Quiz</footer>
+    <script src="main.js"></script>
+
 </body>
 </html>

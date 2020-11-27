@@ -1,11 +1,10 @@
 
-
-document .querySelector(".toggleDisplay") .addEventListener("click", toggleDivDisplay);
+document .querySelector(".teknikCiv") .addEventListener("click", toggleDivDisplay);
 function toggleDivDisplay() {
    var x = document.querySelector(".div-visible");
-   if (x.style.display === "none") {
-      x.style.display = "block";
-   } else {
+   if (x.style.display === "block") {
       x.style.display = "none";
+   } else {
+      x.style.display = "block";
    }
 }
