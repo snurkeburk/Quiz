@@ -4,50 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
+    <script type="text/javascript" src="/main.js"></script>
     <title>Document</title>
 </head>
 <body>
-
     <header>
         <h1>NTI-Quiz</h1>
         <h2>Ett snabbt quiz om ditt favoritämne</h2>
     </header>
-    <form>
-        
+    <!-- form one (information about student) -->
+    <form>        
         <p id="mailText">Ange mail: </p>
-        <input placeholder="Ben Dover" id="mail" required>
-        <p id="klassFörsta">Jag går:</p>
-        <ul class="dropdown">
-            <li><a href="#" class="dropbtn">Teknik</a></li>
-                <li><a href="#">2018</a></li>
-                        <li><a href="#" class="bokstav">A</a></li>
-                        <li><a href="#" class="bokstav">B</a></li>
-                        <li><a href="#" class="bokstav">C</a></li>
-                        <li><a href="#" class="bokstav">D</a></li>
-                        <li><a href="#" class="bokstav">E</a></li>
+        <input placeholder="Ben Dover" id="mail" >
+        
+        <label for="riktning">Välj inriktning</label>
+        <select class="val" name="riktning">
+            <option value="teknik" id="teknik" >Teknik(spel)</option>
+            <option value="El">El</option>
+            <option value="Estet">Estet</option>
+            <option value="TeknikCivil">Teknik(civil)</option>
+        </select>
+        <label for="val">Välj år</label>
+        <select class="val" name="val">
+            <option value="1">1:an</option>
+            <option value="2">2:an</option>
+            <option value="3">3:am</option>
+        </select>
+    </form>
+    <!-- LINE BREAK -->
+    <div class="lineBreak"></div>
 
-                <a href="#">2019</a>
-                    <div class="dropdown-content-again">
-                        <a href="#" class="bokstav">A</a>
-                        <a href="#" class="bokstav">B</a>
-                        <a href="#" class="bokstav">C</a>
-                        <a href="#" class="bokstav">D</a>
-                        <a href="#" class="bokstav">E</a>
-                    </div>
-
-                <a href="#">2020</a>
-                    <div class="dropdown-content-again">
-                        <a href="#" class="bokstav">A</a>
-                        <a href="#" class="bokstav">B</a>
-                        <a href="#" class="bokstav">C</a>
-                        <a href="#" class="bokstav">D</a>
-                        <a href="#" class="bokstav">E</a>
-                    </div>
-
+    <form>
+        <p id="klassVal">Välj en eller flera favorit ämnen: </p>
 
     </form>
-
+    <button class="toggleDisplay">Hide Div</button>
+<h2>Click on the above button to hide the div below</h2>
+<div class="div-visible">
+This is a div element
+</div>
 
     <footer>Isak Anderson | NTI-Quiz</footer>
 </body>

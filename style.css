@@ -4,15 +4,13 @@
 }
 
 body {
-  height: 100vh;
   width: 100%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+
 }
 
 header {
   text-align: center;
-  color: rgb(31, 31, 31);
+  color: rgb(255, 255, 255);
   background: rgb(130, 0, 237);
   background: linear-gradient(
     90deg,
@@ -24,44 +22,73 @@ header {
 }
 
 form {
+  font-size: 3vh;
   display: flex;
   flex-direction: column;
   text-align: center;
-  border-left-style: groove;
-  border-right-style: groove;
-  margin-left: 10em;
-  margin-right: 10em;
-}
-
-#mail {
-  height: 1em;
-  width: 10em;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #mailText {
   margin-right: 1em;
 }
 
-ul li a {
-  background-color: #888;
-}
-
-ul li li {
-  display: none;
-}
-
-footer {
-  width: 100%;
+#mail {
+  width: 15em;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  height: 3em;
   text-align: center;
-  color: rgb(31, 31, 31);
+}
+
+.val {
+  width: 15em;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 2em;
+  height: 3em;
+  text-align: center;
+}
+
+.lineBreak {
+  border-top-style: solid;
+  border-width: 0.1em;
+  width: 90%;
+  margin: auto;
+  border-color: rgb(0, 0, 0);
+  margin-bottom: 0.5em;
+}
+
+footer{
+  position: fixed;
+  text-align: center;
+  padding: 0.5em;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(255, 255, 255);
   background: rgb(130, 0, 237);
   background: linear-gradient(
     90deg,
     rgba(130, 0, 237, 1) 0%,
     rgba(179, 0, 255, 1) 100%
   );
-  position: absolute;
-  bottom: 0;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: rgb(51, 51, 192);
+  color: white;
+  font-size: 18px;
+}
+.div-visible {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: rgb(210, 230, 173);
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
 }
