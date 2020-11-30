@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 
 body {
@@ -114,6 +115,7 @@ background-color: rgb(71, 71, 209);
 
 .skriv {
   display: block;
+  
 }
 
 .ett, #två {
