@@ -15,14 +15,14 @@
     <!-- form one (information about student) -->
     <form>        
         <p id="mailText">Ange mail: </p>
-        <input placeholder="Ben Dover" id="mail" >
+        <input placeholder="Ben Dover" id="mail" required>
         <label for="val">Välj år</label>
         <select class="val" name="val">
             <option value="1">1:an</option>
             <option value="2">2:an</option>
             <option value="3">3:am</option>
         </select>
-        <label for="riktning">Välj inriktning</label>
+        <label for="riktning">Välj inriktning för att gå vidare</label>
     </form>
 
     <section class="inriktning"> 
@@ -35,10 +35,44 @@
     
         <!-- LINE BREAK -->
         <div class="lineBreak"></div>
-        <form>
-        <div class="div-visible">
-            <p id="klassVal">Välj en eller flera favorit ämnen: </p>
+
+    <form>
+        <div class="div-visible-civ">
+            <p id="klassValEtt">Välj en eller flera favorit ämnen: </p>
+            <div class="checkFlexContainer">
+            <!-- WEBBUTVECKLING-->
+            <input class ="checkboxEttwebb" type="checkbox">
+            <p class="checkboxEttText" >Webbutveckling</p>
+            <!-- Dator- och nätverksteknik-->
+            <input class ="checkboxEttdao" type="checkbox">
+            <p class="checkboxEttText" >Dator- och nätverksteknik</p>
+            <!-- Fysik-->
+            <input class ="checkboxEttfys" type="checkbox">
+            <p class="checkboxEttText" >Fysik</p>
+            <!-- Matematik-->
+            <input class ="checkboxEttmat" type="checkbox">
+            <p class="checkboxEttText" >Matematik</p>
+            <!-- Programmering-->
+            <input class ="checkboxEttpro" type="checkbox">
+            <p class="checkboxEttText" >Programmering</p>
+            <!-- Svenska-->
+            <input class ="checkboxEttsve" type="checkbox">
+            <p class="checkboxEttText" >Svenska</p>
         </div>
+
+        <p id="OBS">(Välj minst 1 för att kunna gå vidare!)</p>
+        <div class="skriv">
+            <p class="ett">Utveckla varför: </p>
+            <textarea id ="två" rows = "5" cols = "60" name = "description">
+            </textarea>
+
+
+
+
+        </div>
+
+        </div>
+
     </form>
     </section>
 

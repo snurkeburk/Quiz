@@ -60,6 +60,7 @@ form {
   border-width: 0.1em;
   width: 90%;
   margin: auto;
+  margin-top: 2em;
   border-color: rgb(0, 0, 0);
   margin-bottom: 0.5em;
 }
@@ -96,18 +97,67 @@ footer{
   border-radius: 0.2em;
 }
 .teknikCiv:hover, .teknikSpel:hover, .Estet:hover, .El:hover {
-  background-color: rgb(71, 71, 209);
+background-color: rgb(71, 71, 209);
   transition-duration: 600ms;
 
 }
 
-.div-visible {
+.div-visible-civ {
   display: none;
   width: 100%;
   padding: 50px 0;
   text-align: center;
-  background-color: rgb(210, 230, 173);
-  margin-top: 20px;
-  font-size: 18px;
+  background-color: rgba(152, 100, 235, 0.089);
+  margin-top: 1em;
+  font-size: 2.5vh;
   font-weight: 500;
+}
+
+.skriv {
+  display: block;
+}
+
+.ett, #två {
+  display: none;
+  width: 50%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.checkFlexContainer {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: auto;
+  width: 15em;
+  justify-content: center;
+  
+}
+
+.checkboxEttText {
+  font-size: 2vh;
+  margin-top: -2.1em;
+  margin-left: 4em;
+  cursor: default;
+}
+
+input.checkboxEttwebb, input.checkboxEttdao,  
+input.checkboxEttfys, input.checkboxEttmat, 
+input.checkboxEttpro, input.checkboxEttsve {
+  width: 3vh; 
+  height: 3vh;
+  margin: 1em;
+
+}
+
+input.checkboxEtt:hover {
+  width: 3.1vh; 
+  height: 3.1vh;
+  cursor: pointer;
+}
+
+#OBS {
+  font-size: 1.5vh;
+  margin-top: 2em;
+  color: rgba(243, 0, 0, 0.418);
 }
