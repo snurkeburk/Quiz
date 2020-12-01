@@ -44,6 +44,14 @@ form {
   border-width: 0.1em;
 }
 
+input:valid {
+  background-color: rgba(0, 128, 0, 0.384);
+}
+
+input:invalid {
+  background-color: rgba(255, 0, 0, 0.151);
+}
+
 .val {
   width: 15em;
   margin: auto;
@@ -115,14 +123,19 @@ background-color: rgb(71, 71, 209);
 
 .skriv {
   display: block;
-  
+  margin-top: 4em;
 }
 
 .ett, #två {
   display: none;
-  width: 50%;
+  width: 40%;
   margin: auto;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+#två:focus{
+  height: 20em;
+  font-size: 2vh;
 }
 
 .checkFlexContainer {
@@ -158,7 +171,10 @@ input.checkboxEtt:hover {
 }
 
 #OBS {
+  display: block;
   font-size: 1.5vh;
   margin-top: 2em;
   color: rgba(243, 0, 0, 0.418);
 }
+
+
